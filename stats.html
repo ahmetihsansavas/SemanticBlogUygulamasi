@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Driver Stats</title>
+    <style>
+    	.tab(float: left: )
+    	.tab input(display: block;margin-bottom: 20px)
+
+    </style>
+
+    
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/flag.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/icon.min.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/basic-icon.css">
+   
+
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/button.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/divider.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/header.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/image.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/input.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/label.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/loader.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/reveal.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/progress.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/segment.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/elements/step.css">
+   
+    <link rel="stylesheet" type="text/css" class="ui" href="css/collections/breadcrumb.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/collections/form.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/collections/grid.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/collections/menu.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/collections/message.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/collections/table.css">
+
+    <link rel="stylesheet" type="text/css" class="ui" href="css/views/comment.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/views/list.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/views/feed.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/views/item.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/views/statistic.css">
+
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/modal.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/accordion.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/dropdown.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/popup.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/rating.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/sidebar.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/shape.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/tab.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/checkbox.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/dimmer.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="css/modules/transition.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="stylesheets/semantic.css">
+
+    <title>Driver Stats</title>
+</head>
+ 
+<body id="example">
+    <div class="ui red inverted menu">
+        <div class="container">
+            <div class="title item">
+                <h1 class="ui inverted header">Team Statics <span class="sub header"></span></h1>
+
+            </div>
+            <div class="right menu">
+                <div class="item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" container">
+
+            <a class=" item" href="semantic-ui-style.html">
+                <i class="home icon"></i> Home
+            </a>
+            <a class="item" href="index.html">
+                <i class="comment icon"></i> Green Style Blog
+            </a>
+            <a class="item" href="schumi.html">
+                <i class="dashboard icon"></i> Legends
+            </a>
+            <a class="active item" href="stats.html">
+                <i class="folder icon"></i> Stats
+            </a>
+             <a class="item" href="gallery.html">
+                <i class="image icon"></i> Gallery
+            </a>
+
+        </div>
+    </div>
+
+<div class="container">
+
+    <div class="col-md-9"><br>
+        <table id="myTable" class="table table-responsive">
+          
+            <thead>
+            <tr>
+                <th>Driver</th>
+    <th>Races</th>
+    <th>1st</th>
+    <th>2nd</th> 
+    <th>3rd</th>
+    <th>Podiums</th>
+    <th>Poles</th>
+    <th>Laps</th>
+    <th>Fastest</th>
+    <th>Points</th>
+      <th>Driver'Titles</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td><i class="de flag"></i><a href="schumi.html"><font color="red">Michael Schumacher</font></a></td>
+      <td>181</td>
+      <td>72</td>
+      <td>32</td>
+      <td>12</td>
+      <td>116</td>
+      <td>58</td>
+      <td>10251</td>
+      <td>53</td>
+      <td>1066</td> 
+      <td>7</td>
+      </tr> 
+      <tr>
+       <td><i class="br flag"></i><a href="yeni22.html"><font color="red">Felipe Massa</font></a></td>
+      <td>139</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>36</td>
+      <td>15</td>
+      <td>7914</td>
+      <td>14</td>
+      <td>789</td>
+      <td>-</td>
+    </tr>
+
+<tr>
+       <td><i class="de flag"> </i><a href="semantic-ui-style.html"><font color="red">Sebastian Vettel</font></a></td>
+      <td>202</td>
+      <td>49</td>
+      <td>62</td>
+      <td>23</td>
+      <td>134</td>
+      <td>52</td>
+      <td>10914</td>
+      <td>34</td>
+      <td>2489</td>
+      <td>4</td>
+    </tr>
+    <tr>
+       <td><i class="fi flag"> </i><a href="semantic-ui-style.html"><font color="red">Kimi Raikkonen</font></a></td>
+      <td>276</td>
+      <td>20</td>
+      <td>12</td>
+      <td>54</td>
+      <td>96</td>
+      <td>17</td>
+      <td>14314</td>
+      <td>44</td>
+      <td>1589</td>
+      <td>1</td>
+    </tr>
+    <tr>
+       <td><i class="br flag"></i><a href="schumi.html"><font color="blue">Rubens Barrichello</font></a></td>
+      <td>102</td>
+      <td>9</td>
+      <td>24</td>
+      <td>22</td>
+      <td>55</td>
+      <td>11</td>
+      <td>5684</td>
+      <td>15</td>
+      <td>412</td>
+      <td>0</td>
+    </tr>
+
+<tr>
+       <td><i class="es flag"></i><a href="schumi.html"><font color="blue">Fernando Alonso</font></a></td>
+      <td>95</td>
+      <td>11</td>
+      <td>18</td>
+      <td>15</td>
+      <td>44</td>
+      <td>4</td>
+      <td>5455</td>
+      <td>7</td>
+      <td>1190</td>
+      <td>0</td>
+    </tr>
+<tr>
+       <td><i class="at flag"> </i><a href="schumi.html"><font color="blue">Gerhard Berger</font></a></td>
+      <td>96</td>
+      <td>5</td>
+      <td>8</td>
+      <td>11</td>
+      <td>24</td>
+      <td>7</td>
+      <td>4301</td>
+      <td>9</td>
+      <td>182</td>
+      <td>0</td>
+    </tr>
+       <td><i class="at flag"> </i><a href="schumi.html"><font color="red">Niki Lauda</font></a></td>
+      <td>58</td>
+      <td>15</td>
+      <td>12</td>
+      <td>5</td>
+      <td>32</td>
+      <td>23</td>
+      <td>3132</td>
+      <td>12</td>
+      <td>242.5</td>
+      <td>2</td>
+    </tr>
+<td><i class="gb flag"> </i><a href="schumi.html"><font color="blue">Eddie Irvine</font></a></td>
+      <td>73</td>
+      <td>4</td>
+      <td>6</td>
+      <td>13</td>
+      <td>23</td>
+      <td>0</td>
+      <td>3251</td>
+      <td>1</td>
+      <td>156</td>
+      <td>0</td>
+    </tr>
+
+<td><i class="ca flag"> </i><a href="schumi.html"><font color="blue">Gilles Villeneuve</font></a></td>
+      <td>66</td>
+      <td>6</td>
+      <td>5</td>
+      <td>2</td>
+      <td>13</td>
+      <td>2</td>
+      <td>3216</td>
+      <td>8</td>
+      <td>107</td>
+      <td>0</td>
+    </tr>
+<td><i class="it flag"> </i><a href="schumi.html"><font color="red">Michele Alboreto</font></a></td>
+      <td>80</td>
+      <td>3</td>
+      <td>9</td>
+      <td>7</td>
+      <td>19</td>
+      <td>2</td>
+      <td>3576</td>
+      <td>4</td>
+      <td>138.5</td>
+      <td>1</td>
+    </tr>
+
+
+
+           
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="tab">
+	Driver:<input type="text" name="fname"> 	            
+	<!-- <th>Driver</th>
+    <th>Races</th>
+    <th>1st</th>
+    <th>2nd</th> 
+    <th>3rd</th>
+    <th>Podiums</th>
+    <th>Poles</th>
+    <th>Laps</th>
+    <th>Fastest</th>
+    <th>Points</th>
+      <th>Driver'Titles</th>
+  -->
+	Races:<input type="text" name="frace">
+	1st:<input type="text" name="f1st">
+	2nd:<input type="text" name="f2nd">
+	3rd:<input type="text" name="f3rd">
+	Podiums:<input type="text" name="fpod">
+	Poles:<input type="text" name="fpol">
+	Laps:<input type="text" name="flaps">
+	Fastets:<input type="text" name="fast">
+	Driver'Titles:<input type="text" name="ftit">
+
+	<button class="ui button">Add</button>
+
+</div>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/b-1.3.1/b-html5-1.3.1/b-print-1.3.1/r-2.1.1/rg-1.0.0/datatables.min.css"/>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/b-1.3.1/b-html5-1.3.1/b-print-1.3.1/r-2.1.1/rg-1.0.0/datatables.min.js"></script>
+
+
+<script>
+   var table =   $('#myTable').DataTable({
+            language: {
+                info: "_TOTAL_ kayıttan _START_ - _END_ kayıt gösteriliyor,şampiyon olanlar kırmızı renkle göst.",
+                infoEmpty:      "Gösterilecek hiç kayıt yok.",
+                loadingRecords: "Kayıtlar yükleniyor.",
+                zeroRecords: "Tablo boş",
+                search: "Arama:",
+                infoFiltered:   "(toplam _MAX_ kayıttan filtrelenenler)",
+                buttons: {
+                    copyTitle: "Panoya kopyalandı.",
+                    copySuccess:"Panoya %d satır kopyalandı",
+                    copy: "Kopyala",
+                    print: "Yazdır",
+                },
+
+                paginate: {
+                    first: "İlk",
+                    previous: "Önceki",
+                    next: "Sonraki",
+                    last: "Son"
+                },
+            },
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'excel', 'pdf', 'print'
+            ],
+            responsive: true
+        });
+
+</script>
+<script>
+	function addHtmlTableRow(){
+		var table=document.getElementById("table"),
+		newRow =table.insertRow(table.length),
+		cell1=newRow.insertCell(0),
+		cell2=newRow.insertCell(1),
+		cell3=newRow.insertCell(2),
+		cell4=newRow.insertCell(3),
+		cell5=newRow.insertCell(4),
+		cell6=newRow.insertCell(5),
+		cell7=newRow.insertCell(6),
+		cell8=newRow.insertCell(7),
+		cell9=newRow.insertCell(8),
+
+		frace=document.getElementById("frace").value,
+		f1st=document.getElementById("f1st").value,
+		f2nd=document.getElementById("f2nd").value,
+		f3rd=document.getElementById("f3rd").value,
+		fpol=document.getElementById("fpol").value,
+		fpod=document.getElementById("fpod").value,
+		flaps=document.getElementById("flaps").value,
+		f1st=document.getElementById("f1st").value,
+		fast=document.getElementById("fast").value,
+		ftit=document.getElementById("ftit").value,
+	}
+
+
+
+
+</script>
+
+
+</body>
+</html>
